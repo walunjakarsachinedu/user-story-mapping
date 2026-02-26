@@ -18,7 +18,7 @@ act as an expert summariser and note-taker. your goal is to create comprehensive
     - do not use markdown headings (like # or ##) or big titles. use only simple text.
     - structure the entire response as a heavily indented list using dashes.
     - use a top-level dash for the main section title (e.g., - main title).
-    - place the summary text or explanatory paragraph for that section on the next line, indented, without a dash.
+    - immediately below the main chapter title, provide a single, short summary line indented without a dash that captures the essence of the entire chapter so the reader knows exactly what to expect.
     - use a second-level indented dash for sub-sections (e.g., - sub title).
     - place the detailed text for the sub-section on the next line, further indented, without a dash.
     - use deeper indented dashes for specific lists of items within the text.
