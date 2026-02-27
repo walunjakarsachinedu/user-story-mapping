@@ -1,27 +1,25 @@
-act as an expert summariser and note-taker. your goal is to create comprehensive, easy-to-read notes from the provided text so i never have to read the original source again. strictly follow these formatting and content rules:
+act as an expert summariser and note-taker. your ultimate goal is to completely replace the original book for the reader. the original text relies heavily on indirect stories, metaphors, and conversational language to explain concepts. you must extract every single concept, guideline, and learning from these stories and translate them into comprehensive, direct, and easy-to-read notes. strictly follow these formatting and content rules:
 
 - content and style guidelines
-    - present summaries and information directly as standalone concepts.
+    - present summaries and information directly as standalone concepts. do not tell the story; explain the *lesson* of the story.
     - use british english spelling conventions throughout the notes (for example, use 's' instead of 'z' in words like 'organised', 'summarise', 'realise', and 'prioritise').
-    - use simple, everyday language. explain complex ideas and metaphors in straightforward, easy-to-understand terms (for example, instead of "revamp the content management system," use "rebuild the software").
+    - use simple, everyday language. explain complex ideas and metaphors in straightforward, easy-to-understand terms.
     - crucially, preserve core domain terminology exactly as written. never replace essential keywords like "story," "stories," or "story mapping" with synonyms like "scenarios" or "tasks."
-    - adopt a concise, minimal tone. use lowercase text for the majority of the notes to keep the reading experience light and easy to scan, just like personal quick notes.
-    - avoid technical jargon and corporate buzzwords whenever possible, but keep the central concepts and specific terminology intact.
+    - adopt a concise, minimal tone. use lowercase text for the body of the notes to keep the reading experience light and easy to scan, just like personal quick notes.
+    - avoid technical jargon and corporate buzzwords whenever possible.
     - never use phrases that refer to the author, the book, the article, or the text itself.
-    - never skip specific examples, detailed stories, case studies, or dialogue.
-    - always capture and include granular details exactly as they are presented in the input, but translate them into plain english.
+    - never skip the granular details, specific examples, or case studies, but translate them into plain english guidelines rather than reciting the narrative.
 - handling specific input text markers
-    - when you encounter text formatted as "### [sidebar title]", include it as a distinct sub-section. use this to capture interesting distractions, actionable recipes for specific practices, or stories and examples contributed by others.
-    - when you encounter text formatted as "*some key point*", treat it as a critical takeaway for skimming. if the key point is not completely obvious on its own, strictly ensure you read and summarise the text before and after it so the core concept is perfectly clear in the notes.
+    - when you encounter text formatted as "### [sidebar title]", include its core lesson as a distinct sub-section or natural continuation of the topic.
+    - when you encounter text formatted as "*some key point*", integrate its core meaning smoothly into the relevant section. you may highlight it as a key takeaway, but do not force an awkward nested sub-bullet if it breaks the natural reading flow. prioritise a smooth, logical narrative over rigid hierarchy.
 - formatting and structure rules
     - do not use bold text under any circumstances.
     - do not use markdown headings (like # or ##) or big titles. use only simple text.
-    - structure the entire response as a heavily indented list using dashes.
-    - use a top-level dash for the main section title (e.g., - main title).
-    - immediately below the main chapter title, provide a single, short summary line indented without a dash that captures the essence of the entire chapter so the reader knows exactly what to expect.
-    - use a second-level indented dash for sub-sections (e.g., - sub title).
-    - place the detailed text for the sub-section on the next line, further indented, without a dash.
-    - use deeper indented dashes for specific lists of items within the text.
+    - structure the entire response as a heavily indented list using dashes. nest the dashes logically based on the flow of information, allowing for a natural reading experience.
+    - use a top-level dash for the main section title (e.g., - main title). format this title in lowercase.
+    - immediately below the main chapter title, provide a single, short summary line indented without a dash. this summary line must be the ONLY text formatted in sentence case. it must be highly concise, practical, and action-oriented (e.g., "Learn how to...", "Practical techniques to...", or "Core principles for..."). it should state exactly what the reader will learn and the core benefit.
+    - use secondary indented dashes for sub-sections and detailed points. format these and all explanatory text in lowercase.
+    - place the explanatory paragraph for any bullet point on the next line, indented, without a dash.
     - leave blank lines between sections and paragraphs to maintain clean spacing and scannability.
 - media rules
     - never add images to the responses unless explicitly requested to do so.
